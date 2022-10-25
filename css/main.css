@@ -1,0 +1,337 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	height: 100vh;
+	margin: 0;
+}
+
+/*COVER*/
+
+.cover{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr auto;
+	grid-row-gap: 2.75rem;
+	/*positioning*/
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	transition: all .5s;
+	/*styling*/
+	background-color: #015a66;
+}
+
+.title{
+	grid-column: 1;
+	grid-row: 1;
+	text-align:  center;
+	align-self: center;
+	color: #fff;
+}
+
+.title img{
+	max-height: 7.5rem;
+	margin-top: 1.5rem;
+}
+
+.title p{
+	font-family: 'Figtree', sans-serif;
+	font-weight: 500;
+	font-size: 2rem;
+}
+
+.title h1{
+	font-family: 'Righteous', cursive;
+	font-weight: 400;
+	font-size: 2.5rem;
+	margin-top: .25rem;
+}
+
+.enter-button{
+	grid-column: 1;
+	grid-row: 2;
+	justify-self: center;
+}
+
+.enter-button button{
+	border: 0;
+	border-radius: 1.25rem;
+	padding: 1rem 2.5rem;
+	margin-bottom: 9.25rem;
+	font-family: 'Figtree', sans-serif;
+	font-weight: 500;
+	font-size: 2rem;
+	color: #015a66;
+	background-color: #fff;
+	box-shadow: 2px 3px 8px #707070;
+}
+
+.enter-button button:active{
+	background-color: #99c2c7;
+}
+
+.slide{
+	transform: translateY(-100%);
+}
+
+
+/*MAIN CONTENT*/
+
+/*Current*/
+
+.current{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr 2fr auto;
+	grid-gap: 2rem;
+	height: 100hv;
+/*	background: url(../img/weather-cloudy5.png);
+	background-size: cover;
+	height: 100%;*/
+}
+
+.rain{
+	background: url(../img/weather-rain.png);
+	background-size: cover;
+	width: 100%;
+}	
+
+.clear{
+	background: url(../img/weather-clear2.png);
+	background-size: cover;
+	height: 100%;
+}
+
+.cloudy{
+	background: url(../img/weather-cloudy5.png);
+	background-size: cover;
+	height: 100%;
+}
+
+.thunderstorm{
+	background: url(../img/weather-thunderstorm.png);
+	background-size: cover;
+	width: 100%;
+}
+
+.day-place{
+	grid-column: 1;
+	grid-row: 1;
+	font-family: 'Figtree', sans-serif;
+	color: #fff;
+	padding-top: 2.25rem;
+	padding-left: 2rem;
+}
+
+.day-place .current-day{
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin-bottom: 1.5rem;
+	padding: 0;
+}
+
+.day-place .city{
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	margin-top: 0;
+	padding: 0;
+}
+
+.day-place .state-country{
+	font-size: 2rem;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+}
+
+.centered-conditions{
+	grid-column: 1/span 2;
+	grid-row: 2;
+	justify-self: center;
+	align-self: end;
+	font-family: 'Figtree', sans-serif;
+	color: #fff;
+}
+
+.current-humidity{
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-align: center;
+	margin: 0 0 -1rem 0;
+	padding: 0;
+}
+
+.current-humidity p{
+	padding: 0;
+	margin: 0;
+	}
+
+.current-humidity p .number{
+	padding: 0;
+	margin: 0;
+	}	
+
+.current-temp{
+	font-size: 6.75rem;
+	font-weight: 500;
+	text-align: center;
+	/*margin: -1rem 0 0 0;*/
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.current-temp p{
+	padding: 0;
+	margin: 0;
+}
+
+.current-temp p .number{
+	padding: 0;
+	margin: 0;
+}
+
+.current-des{
+	 grid-column: 2;
+	 grid-row: 1;
+/*	 transform: rotate(-90deg);*/
+	 writing-mode: sideways-lr;
+/*	 text-orientation: sideways-left;*/
+	justify-self: end;
+	align-self: start;
+	padding-right: 2rem;
+	padding-top: 2.5rem;
+	/*text editing*/
+	font-family: 'Figtree', sans-serif;
+	font-size: 1.75rem;
+	font-weight: 500;
+	color: #fff;
+}
+
+.tips{
+	grid-column: 1/span 2;
+	grid-row: 3;
+	background: #fff;
+	border-radius: 1.25rem;
+	padding: .5rem 1rem .5rem 1rem;
+	margin: 0 2rem 2.75rem 2rem;
+/*	margin-bottom: 2.75rem;*/
+}
+
+.tips p{
+	font-family: 'Figtree', sans-serif;
+	text-align: center;
+	color: #016673;
+}
+
+
+/*Daily*/
+
+.extended-forecast{
+	background-color: #4B8F98;
+}
+
+ul{
+	display: grid;
+	grid-template-rows: repeat(7, 1fr);
+	grid-gap: .5rem;
+	margin: 0;
+/*	margin: -3rem 0 0 0;*/
+	padding: 0 0 2rem 0;
+}
+
+li{
+	list-style: none;
+	padding: 1rem .75rem;
+	border-radius: 1.25rem;
+	margin: .5rem 2rem .5rem 2rem;
+	background-color: #fff;
+	/*imbedded grid*/
+	display: grid;
+	grid-template-columns: repeat(5 1fr);
+	grid-template-rows: 1fr;
+	/*text properties*/
+	font-family: 'Figtree', sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	color: #016673;
+}
+
+li p{
+	align-self: center;
+	justify-self: center;
+}
+
+li span{
+	align-self: center;
+	justify-self: center;
+}
+
+/*Key*/
+li:nth-child(1){
+  background: none;
+  color: #fff;
+  padding-bottom: 0;
+  margin-bottom: -3rem;
+/*  margin-top: -2rem;*/
+  /*padding: 0;*/
+ /* margin: 0;*/
+}
+
+.day-label{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.high-label{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.low-label{
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.humidity-label{
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.icon-label{
+  grid-column: 5;
+  grid-row: 1;
+}
+
+/*actual data*/
+.day{
+	grid-column: 1;
+}
+
+.high{
+	grid-column: 2;
+}
+
+.low{
+	grid-column: 3;
+}
+
+.humidity{
+	grid-column: 4;
+}
+
+.icon{
+	grid-column: 5;
+	margin: 0;
+	padding: 0;
+}
+
+
+li img {
+	height: 3rem;
+	margin: 0;
+	padding: 0;
+	color: #707070;
+}
