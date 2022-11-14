@@ -197,7 +197,7 @@ body{
 	 grid-column: 2;
 	 grid-row: 1;
 /*	 transform: rotate(-90deg);*/
-	 writing-mode: sideways-lr;
+	 writing-mode: vertical-lr;
 /*	 text-orientation: sideways-left;*/
 	justify-self: end;
 	align-self: start;
