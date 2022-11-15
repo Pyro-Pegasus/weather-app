@@ -235,7 +235,7 @@ function displayDay(n){
   weekday[1] = "Mon";
   weekday[2] = "Tues";
   weekday[3] = "Wed";
-  weekday[4] = "Thurs";
+  weekday[4] = "Thur";
   weekday[5] = "Fri";
   weekday[6] = "Sat";
 
