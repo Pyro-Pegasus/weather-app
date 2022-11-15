@@ -95,24 +95,28 @@ body{
 .rain{
 	background: url(../img/weather-rain.png);
 	background-size: cover;
+	background-position: top center;
 	width: 100%;
 }	
 
 .clear{
 	background: url(../img/weather-clear2.png);
 	background-size: cover;
+	background-position: top center;
 	height: 100%;
 }
 
 .cloudy{
 	background: url(../img/weather-cloudy5.png);
 	background-size: cover;
+	background-position: top center;
 	height: 100%;
 }
 
 .thunderstorm{
 	background: url(../img/weather-thunderstorm.png);
 	background-size: cover;
+	background-position: top center;
 	width: 100%;
 }
 
