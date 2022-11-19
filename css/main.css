@@ -93,31 +93,35 @@ body{
 }
 
 .rain{
-	background: url(../img/weather-rain.png);
+	background: url(../img/weather-rain2.svg);
 	background-size: cover;
 	background-position: top center;
 	width: 100%;
+	height: 100%;
 }	
 
 .clear{
-	background: url(../img/weather-clear2.png);
+	background: url(../img/weather-clear3.svg);
 	background-size: cover;
 	background-position: top center;
+	width: 100%;
 	height: 100%;
 }
 
 .cloudy{
-	background: url(../img/weather-cloudy5.png);
+	background: url(../img/weather-cloudy6.svg);
 	background-size: cover;
 	background-position: top center;
+	width: 100%;
 	height: 100%;
 }
 
 .thunderstorm{
-	background: url(../img/weather-thunderstorm.png);
+	background: url(../img/weather-thunderstorm2.svg);
 	background-size: cover;
 	background-position: top center;
 	width: 100%;
+	height: 100%;
 }
 
 .day-place{

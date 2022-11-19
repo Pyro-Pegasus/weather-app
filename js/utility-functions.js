@@ -16,7 +16,7 @@
 function changeTheme(d){
   // if the description includes the word "rain"
   if( d.indexOf('rain') > 0 ) {
-    $('.current').addClass('rainy');
+    $('.current').addClass('rain');
   // if the description includes the word "clear"
   } else if( d.indexOf('drizzle') > 0 ) {
     $('.current').addClass('rain');
