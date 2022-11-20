@@ -110,7 +110,7 @@ function printTips(d){
   } else if( d.indexOf('sunny') >= 0 ) {
     return 'Remember to reapply sunscreen';
   } else if( d.indexOf('clear') >= 0 ) {
-    return 'Exercise and drink plenty of water';
+    return 'Seems like a good day for exercise. Remember to drink plenty of water';
   // if none of those cases are true, assume it's clear
   } else {
     return 'What a pretty day';
